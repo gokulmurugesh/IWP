@@ -41,9 +41,8 @@ body{
 }
 
 .navbar li a:hover {
-  background-color: #81a3c2;
+  color: #81a3c2;
 }
-
 /* .center {
   display: block;
   margin: auto;
