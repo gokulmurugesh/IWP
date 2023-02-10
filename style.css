@@ -8,7 +8,6 @@ body{
   float: left;
   width: 100%;
   position: relative;
-  margin-bottom: 50px;
 }
 
 .navbar ul {
@@ -59,7 +58,7 @@ body{
 .container {
   display: flex;
   align-items: center;
-  height: 750px;
+  height: 800px;
   border: 1px solid white; 
   text-align: center;
   justify-content: center;
