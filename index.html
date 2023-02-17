@@ -4,79 +4,114 @@
     <title>My Resume</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Internal CSS -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-      </ul>
-    </div>
-
-    <div class="container" id="home">
-      <div class="centeredelement">
-        <img
-          src="gokul.png"
-          alt="DP"
-          style="border-radius: 50%; width: 200px; height: 200px"
-        />
-        <h2>Gokul M</h2>
-      </div>
-    </div>
-
-    <div class="container" id="details">
-      <div class="centeredelement">
-        <h1>Details</h1>
-        <div style="text-align: justify">
-          <h2>Name : Gokul M</h2>
-          <h2>Rollno : 20BCS032</h2>
-          <h2>Contact : 9080014459</h2>
-          <h2>Email : gokul.20cs@kct.ac.in</h2>
-          <h2>
-            Linkedin :
-            <a href="https://www.linkedin.com/in/gokulmurugesh"
-              >Gokul Murugesh</a
-            >
-          </h2>
+    <!-- f1 video -->
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <!-- f2-nav -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#details">Details</a>
+      <a href="#interests">Interests</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+    </nav>
+    <!-- f3-main -->
+    <main>
+      <div class="container" id="home">
+        <div class="centeredelement">
+          <!--Inline CSS-->
+          <!-- f4-figure -->
+          <figure>
+            <img
+              src="gokul.png"
+              alt="DP"
+              style="border-radius: 50%; width: 200px; height: 200px"
+            />
+            <figcaption>Gokul M</figcaption>
+          </figure>
+          <!-- f5-audio -->
+          <audio controls autoplay>
+            <source src="hv.m4a" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="interests">
-      <div class="centeredelement">
-        <h1>Interests</h1>
-        <div style="text-align: justify">
-          <h2>1. Gaming</h2>
-          <h2>2. Programming</h2>
+      <div class="container" id="details">
+        <div class="centeredelement">
+          <h1>Details</h1>
+          <!-- table -->
+          <table>
+            <tr>
+              <td>Name :</td>
+              <td>Gokul M</td>
+            </tr>
+            <tr>
+              <td>Rollno :</td>
+              <td>20BCS032</td>
+            </tr>
+            <tr>
+              <td>Contact :</td>
+              <td>9080014459</td>
+            </tr>
+            <tr>
+              <td>Email :</td>
+              <td>gokul.20cs@kct.ac.in</td>
+            </tr>
+            <tr>
+              <td>Linkedin :</td>
+              <td>
+                <a href="https://www.linkedin.com/in/gokulmurugesh"
+                  >Gokul Murugesh</a
+                >
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="skills">
-      <div class="centeredelement">
-        <h1>Skills</h1>
-        <div style="text-align: justify">
-          <h2>1. C, Python</h2>
-          <h2>2. Cloud Computing</h2>
+      <div class="container" id="interests">
+        <div class="centeredelement">
+          <h1>Interests</h1>
+          <div style="text-align: justify">
+            <h2>1. Gaming</h2>
+            <h2>2. Programming</h2>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="achievements">
-      <div class="centeredelement">
-        <h1>Achievements</h1>
-        <h2>1. Project - Data Analystics Frontend</h2>
-        <h2>2. Certification - Azure Fundamentals</h2>
+      <div class="container" id="skills">
+        <div class="centeredelement">
+          <h1>Skills</h1>
+          <div style="text-align: justify">
+            <h2>1. C, Python</h2>
+            <h2>2. Cloud Computing</h2>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div class="container" id="achievements">
+        <div class="centeredelement">
+          <h1>Achievements</h1>
+          <h2>1. Project - Data Analystics Frontend</h2>
+          <h2>2. Certification - Azure Fundamentals</h2>
+        </div>
+      </div>
+    </main>
+    <!-- f6-footer -->
     <footer style="text-align: center">By Gokul</footer>
   </body>
 </html>
