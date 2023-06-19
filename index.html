@@ -12,14 +12,25 @@
         margin: 0;
         padding: 0;
         font-family: "Roboto", sans-serif;
+        background-image: url("media/background.jpg");
+        /* background-color: #cccccc;
+        background-size: cover; */
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      li {
+        margin: 10px 0;
       }
     </style>
   </head>
   <body>
     <!-- f1 video -->
-    <video autoplay muted loop id="backgroundVideo">
+    <!-- <video autoplay muted loop id="backgroundVideo">
       <source src="media/background.mp4" type="video/mp4" />
-    </video>
+    </video> -->
     <!-- f2-nav -->
     <nav>
       <a href="#home">Home</a>
@@ -53,10 +64,10 @@
             <figcaption>Gokul M</figcaption>
           </figure>
           <!-- f5-audio -->
-          <audio controls autoplay>
+          <!-- <audio controls autoplay>
             <source src="media/audio.m4a" type="audio/mpeg" />
             Your browser does not support the audio element.
-          </audio>
+          </audio> -->
         </div>
         <div class="centeredelement">
           <!-- table -->
@@ -64,10 +75,6 @@
             <tr>
               <td>Name :</td>
               <td>Gokul M</td>
-            </tr>
-            <tr>
-              <td>Rollno :</td>
-              <td>20BCS032</td>
             </tr>
             <tr>
               <td>Contact :</td>
@@ -80,8 +87,18 @@
             <tr>
               <td>Linkedin :</td>
               <td>
-                <a href="https://www.linkedin.com/in/gokulmurugesh"
+                <a
+                  href="https://www.linkedin.com/in/gokulmurugesh"
+                  target="_blank"
                   >Gokul Murugesh</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Github :</td>
+              <td>
+                <a href="https://www.github.com/gokulmurugesh" target="_blank"
+                  >gokulmurugesh</a
                 >
               </td>
             </tr>
@@ -90,25 +107,36 @@
       </div>
 
       <div class="container" id="interests">
-        <div class="centeredelement">
+        <!-- <div class="centeredelement">
           <h1>Interests</h1>
           <div style="text-align: justify">
             <h2>1. Gaming</h2>
             <h2>2. Programming</h2>
           </div>
-        </div>
+        </div> -->
         <div class="centeredelement">
           <h1>Skills</h1>
           <div style="text-align: justify">
-            <h2>1. C, Python</h2>
-            <h2>2. Cloud Computing</h2>
+            <h2>
+              <ul>
+                <li>Proficient in C, JS, Python</li>
+                <li>Experience with web development frameworks React</li>
+                <li>Experience with android app development</li>
+                <li>
+                  Familiarity with cloud platforms such as Azure and Heroku
+                </li>
+                <li>Familiarity with Linux and command line utilities</li>
+                <li>API handling and integration</li>
+                <li>Experience with IoT technologies</li>
+              </ul>
+            </h2>
           </div>
         </div>
       </div>
 
       <div class="container" id="achievements">
         <div class="centeredelement">
-          <h1>Achievements</h1>
+          <h1>Achievements & Certifications</h1>
           <h2>1. Project - Data Analytics Frontend</h2>
           <h2>2. Certification - Azure Fundamentals</h2>
           <h2>3. Certification - Solidworks Designing</h2>
@@ -116,6 +144,8 @@
       </div>
     </main>
     <!-- f6-footer -->
-    <footer style="text-align: center; position : relative; bottom: 50px;">By Gokul</footer>
+    <footer style="text-align: center; position: relative; bottom: 50px">
+      By Gokul
+    </footer>
   </body>
 </html>
